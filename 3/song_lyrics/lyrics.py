@@ -10,4 +10,4 @@ if __name__ == '__main__':
     lyrics = get_lyrics()
     labels, values = zip(*lyrics.items())
 
-    print(labels, values)
+    print(labels[0], values)

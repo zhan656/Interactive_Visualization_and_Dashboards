@@ -15,6 +15,11 @@ def rick():
     labels, values = zip(*lyrics.items())
     # @TODO: Build a dictionary of the lyric data that you can use to
     # build a plotly pie chart
+    l_list = v_list = []
+
+    data = [{
+    'labels': labels, 'values': values, 'type': "pie"
+    }]
 
     return jsonify(data)
 

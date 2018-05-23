@@ -14,6 +14,13 @@
         // YOUR CODE HERE
         // Use d3 to fetch the json from your api
         // create a pie chart with the api data
+        Plotly.d3.json(url, function(error, data){
+            if (error) return console.warn(error);
+
+            var layout = { title: "Lyrics Frequencey" }
+            var PIE = document.getElementById('pie');
+            Plotly.plot(PIE, data, layout)
+        })
 
     </script>
 </body>
