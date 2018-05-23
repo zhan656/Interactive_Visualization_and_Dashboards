@@ -18,8 +18,8 @@ function updatePlotllabels(data) {
   // Use `Plotllabels.restlabelsle` to update the pie chart with the newdata arralabels
   
   var PIE = document.getElementById("pie");
-  Plotly.restyle(PIE,"value",[data]);
-};
+  Plotly.restyle(PIE,"values",[data]);
+}
 
 function getData(dataset) {
   // labelsOUR CODE HERE
@@ -53,4 +53,4 @@ function getData(dataset) {
 };
 
 init();
-getData([data]);
+
